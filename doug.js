@@ -34,7 +34,7 @@ function modifyText() {
         const searchFilters = document.querySelector(".js-search-filters");
         const ike = document.createElement("a");
         ike.textContent = "You just searched Ike, dumbass";
-        ike.href = '';
+        ike.href = 'https://www.youtube.com/watch?v=JsYWZSTbEPU';
         document.title = "You just searched Ike, dumbass";
         searchFilters.appendChild(ike);
         searchIke();
