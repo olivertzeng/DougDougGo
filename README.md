@@ -1,5 +1,6 @@
 # DougDougGo
 ![DougDougGo](https://i.imgur.com/0xi9Gtg.png)
+
 DougDougGo is now your new search engine!
 You can install DougDougGo JS [here](https://greasyfork.org/en/scripts/502061-dougdouggo-js) with
 Violentmonkey
