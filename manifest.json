@@ -8,6 +8,7 @@
 	"icons": {
 		"48": "assets/pepper.png"
 	},
+	"permissions": ["activeTab", "*://*.duckduckgo.com.com/*", "scripting"],
 
 	"content_scripts": [
 		{
@@ -16,5 +17,7 @@
 			"run_at": "document_end",
 			"matches": ["*://*.duckduckgo.com/*"]
 		}
-	]
+	],
+
+	"web_accessible_resources": ["assets/*.gif", "assets/*.mp3", "assets/*.png"]
 }
