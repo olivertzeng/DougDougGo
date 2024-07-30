@@ -9,17 +9,11 @@
 		"48": "assets/pepper.png"
 	},
 
-	"homepage_url": "https://github.com/olivertzeng/DougDougGo",
-
 	"content_scripts": [
 		{
 			"css": ["doug.css"],
-			"js": [
-				{
-					"file": "doug.js",
-					"run_at": "document_idle"
-				}
-			],
+			"js": ["doug.js"],
+			"run_at": "document_end",
 			"matches": ["*://*.duckduckgo.com/*"]
 		}
 	]
