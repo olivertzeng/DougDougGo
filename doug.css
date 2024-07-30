@@ -9,32 +9,32 @@
 
 @-moz-document domain("duckduckgo.com") {
 
-    /* Prefers Light theme */
-    img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(2) {
-        content: url("https://i.imgur.com/zDca5nD.png");
-    }
+  /* Prefers Light theme */
+  img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(2) {
+    content: url("https://i.imgur.com/zDca5nD.png");
+  }
 
-    img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(5) {
-        content: url("https://i.imgur.com/p1YkSdS.png");
-    }
+  img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(5) {
+    content: url("https://i.imgur.com/p1YkSdS.png");
+  }
 
-    .header__logo {
-        background-image: url('https://i.imgur.com/6O47rNT.png');
-    }
-}
+  .header__logo {
+    background-image: url("https://i.imgur.com/6O47rNT.png");
+  }
 
-@media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
 
     /* Prefers Dark theme */
     img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(2) {
-        content: url("https://i.imgur.com/Jg1TkQf.png");
+      content: url("https://i.imgur.com/Jg1TkQf.png");
     }
 
     img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(5) {
-        content: url("https://i.imgur.com/UINOVc7.png");
+      content: url("https://i.imgur.com/UINOVc7.png");
     }
 
     .header__logo {
-        background-image: url('https://i.imgur.com/6O47rNT.png');
+      background-image: url("https://i.imgur.com/6O47rNT.png");
     }
+  }
 }
