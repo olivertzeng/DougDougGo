@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         DougDougGo
-@version      20240729.05.53
+@version      0.1
 @namespace    https://userstyles.world/user/Oliver Tzeng
 @description  DougDougGo is now your new search engine
 @author       Oliver Tzeng
@@ -27,10 +27,14 @@
 
     /* Prefers Dark theme */
     img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(2) {
-        content: url("https://i.imgur.com/xlIvKb4.png");
+        content: url("https://i.imgur.com/Jg1TkQf.png");
     }
 
     img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(5) {
-        content: url("https://i.imgur.com/0xi9Gtg.png");
+        content: url("https://i.imgur.com/UINOVc7.png");
+    }
+
+    .header__logo {
+        background-image: url('https://i.imgur.com/6O47rNT.png');
     }
 }

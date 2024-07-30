@@ -5,11 +5,26 @@
 // @match       *://*duckduckgo.com/*
 // @license     GPLv3
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      Oliver Tzeng
 // @description DougDougGo is now your new search engine
 // @description:zh-TW  DougDougGo 將是你獨一無二的搜尋引擎
 // ==/UserScript==
+
+const searchFilters = document.querySelector(".js-search-filters");
+const ike = document.createElement("a");
+
+// kudos to https://greasyfork.org/en/scripts/4908-play-tone
+function playIke(e){
+  // create audio tag for WAV file
+  var el = document.createElement("audio");
+  el.setAttribute("autoplay", "autoplay");
+  // grab tone file from my site; to avoid mixed content, omit the protocol
+  el.setAttribute("src", "//download1511.mediafire.com/03ahvuacfungbBA7IIJnR1E089LtH73FVcKJxsXDYP99oJebk0y36nfXuQgQSy1E3E3H0yFfeA0UrhsplD0__0NA_ptssqjg8zMyrn1ZL4H8pclemfPjWK-ccMGi2uCK6ReEVz3iWkdleAmZX3RvBjd56BQYXumz5T6X8ZYCIHpISw/u6ty7mdp5zrk1as/ike.mp3");
+  // add to document body
+  document.body.appendChild(el);
+}
+
 
 // Changes favicon to a weird bell pepper
 function bellPeper() {
@@ -28,16 +43,14 @@ function searchIke() {
 
 // You just said Ike, dumbass
 function modifyText() {
-    var url = window.location.href;
-    var searchQuery = url.split("?q=")[1];
-    if (searchQuery && searchQuery.toLowerCase().includes("ike")) {
-        const searchFilters = document.querySelector(".js-search-filters");
-        const ike = document.createElement("a");
+    var searchInput = document.querySelector('#search_form_input');
+    if (searchInput && searchInput.value.toLowerCase().includes("ike")) {
         ike.textContent = "You just searched Ike, dumbass";
         ike.href = 'https://www.youtube.com/watch?v=JsYWZSTbEPU';
         document.title = "You just searched Ike, dumbass";
         searchFilters.appendChild(ike);
         searchIke();
+        playIke();
     } else{
         bellPeper();
     }
@@ -45,3 +58,4 @@ function modifyText() {
 
 bellPeper();
 modifyText();
+playIke();
