@@ -13,13 +13,13 @@
 }
 
 img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(2) {
-    content: var(--small-logo);
+    content: var(--small-logo) !important;
 }
 
 img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(5) {
-    content: var(--big-logo);
+    content: var(--big-logo) !important;
 }
 
 .header__logo {
-    background-image: var(--header-logo);
+    background-image: var(--header-logo) !important;
 }
