@@ -1,5 +1,5 @@
 # DougDougGo
-![DougDougGo](https://i.imgur.com/0xi9Gtg.png)
+![DougDougGo](assets/bigDark.png)
 
 ## **DougDougGo is an extension that adds the famous streamer DougDoug's elements into duckduckgo.com**
 ## Changes Include:
@@ -16,7 +16,7 @@
 
 ## Thanks to
  - DougDoug for inspirement
- - MagicJin being a tester, a supporter, and a nice guy who makes DougDougify(and MrBeastify as
+ - MagicJin being a tester, a supporter, an artist who made the extension icon, and a nice guy who makes DougDougify(and MrBeastify as
    well!)
 
 Issues and suggestions are welcomed

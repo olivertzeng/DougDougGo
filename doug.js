@@ -18,8 +18,12 @@ ike.style.cssText = "float: right; margin-left: 10px"; // adjust the margin as n
 function bellPeper() {
 	const fav = document.createElement("link");
 	fav.rel = "icon";
-	fav.href = chrome.runtime.getURL("assets/pepper.png");
+	fav.href = chrome.runtime.getURL("assets/dougLight.png");
 	document.head.appendChild(fav);
+	if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+		fav.href = chrome.runtime.getURL("assets/dougDark.png");
+		document.head.appendChild(fav);
+	}
 }
 
 function searchIke() {
