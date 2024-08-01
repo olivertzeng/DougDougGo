@@ -1,10 +1,16 @@
+Alph
+Banjo
+Kazooie
 Bayonetta
 Bowser
 Bowser Jr.
 Captain Falcon
 Charizard
+Chrom
 Cloud
 Corrin
+Daisy
+Dark Samus
 Diddy Kong
 Donkey Kong
 Dr. Mario
@@ -13,11 +19,14 @@ Falco
 Fox
 Ganondorf
 Greninja
+Hero
 Ice Climbers
 Ike
 Incineroar
 Inkling
 Jigglypuff
+Joker
+Ken
 King Boo
 King K. Rool
 Kirby
@@ -35,6 +44,7 @@ Mewtwo
 Mii Brawler
 Mii Gunner
 Mii Swordfighter
+Min Min
 Mr. Game & Watch
 Ness
 Olimar
@@ -43,8 +53,11 @@ Palutena
 Peach
 Pichu
 Pikachu
+Piranha Plant
 Pit
-Pokémon Trainer
+Pokemon Trainer
+Pyra
+Mythra
 R.O.B.
 Richter
 Ridley
@@ -52,11 +65,15 @@ Robin
 Rosie
 Roy
 Ryu
+Sakurai
 Samus
 Sheik
 Shulk
+Simon
 Snake
 Sonic
+Steve
+Terry Bogard
 Toon Link
 Villager
 Wario

@@ -1,0 +1,25 @@
+:root {
+    --small-logo: url('assets/smallLight.png');
+    --big-logo: url('assets/bigLight.png');
+    --header-logo: url('assets/dougLight.png');
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --small-logo: url('assets/smallDark.png');
+        --big-logo: url('assets/bigDark.png');
+        --header-logo: url('assets/dougDark.png');
+    }
+}
+
+img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(2) {
+    content: var(--small-logo);
+}
+
+img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(5) {
+    content: var(--big-logo);
+}
+
+.header__logo {
+    background-image: var(--header-logo);
+}

@@ -1,10 +1,10 @@
 {
 	"manifest_version": 2,
 	"name": "DougDougGo",
-	"version": "1.0",
+	"version": "1.1",
 	"description": "DougDougGo is now your new search engine",
 	"icons": {
-		"48": "assets/dougduck.png"
+		"48": "assets/dougDark.png"
 	},
 
 	"browser_specific_settings": {
@@ -12,10 +12,17 @@
 			"id": "dougdouggo@dougdouggo.com"
 		}
 	},
-	"permissions": ["*://*.duckduckgo.com/*", "activeTab", "scripting"],
+	"permissions": [
+		"*://*.duckduckgo.com/*",
+		"activeTab",
+		"scripting",
+		"storage",
+		"tabs"
+	],
 
 	"content_scripts": [
 		{
+			"css": ["doug.css"],
 			"js": ["doug.js"],
 			"run_at": "document_end",
 			"matches": ["*://*.duckduckgo.com/*"]

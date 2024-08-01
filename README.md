@@ -10,6 +10,7 @@
 ## TODO:
  - include settings to disable the sound effect if the user searches ike
  - change aichat's text to Babagaboosh
+ - Notification when user searches for smash bros
 
 **DougDougGo is now your new search engine!**
 * Also check out DougDougify by [MagicJinn](https://github.com/MagicJinn/) [here](https://addons.mozilla.org/zh-TW/firefox/addon/youtube-dougdougify/)
