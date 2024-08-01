@@ -4,7 +4,7 @@
 // @namespace   https://duckduckgo.com
 // @match       *://*duckduckgo.com/*
 // @license     GPLv3
-// @version     1.0
+// @version     1.1.1
 // @author      Oliver Tzeng
 // @description DougDougGo is now your new search engine
 // @description:zh-TW  DougDougGo 將是你獨一無二的搜尋引擎
@@ -63,7 +63,7 @@ async function modifyText() {
 			searchSmash();
 			document.title = message;
 			chrome.storage.sync.get(["soundEnabled"], (result) => {
-				if (result.soundEnabled && matchedCharacters.includes("Ike")) {
+				if (matchedCharacters.includes("Ike")) {
 					ikeAudio.play();
 				}
 			});
