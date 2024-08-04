@@ -10,22 +10,26 @@
 // @description:zh-TW  DougDougGo 將是你獨一無二的搜尋引擎
 // ==/UserScript==
 
-const searchFilters = document.querySelector(".js-search-filters");
-const smashText = document.createElement("a");
-const ikeAudio = new Audio(browser.runtime.getURL("assets/ike.mp3"));
-const smashCharacters = fetch(chrome.runtime.getURL("assets/smash.txt"))
-	.then((response) => response.text())
-	.then((text) => text.split("\n").filter((character) => character !== ""));
+// Adds pajamasam in ddg's ai
+const url = new URL(window.location.href);
+const iaParam = url.searchParams.get("ia");
 
-smashText.style.cssText = "float: right; margin-left: 10px"; // Adjust margin as needed
+// FIX: This only works if the script is being run twice in the same page without refreshing
+if (iaParam === "chat") {
+	const links = document.querySelectorAll(".yGEuosa_aZeFroGMfpgu");
 
-function bellPeper() {
+	for (const link of links) {
+		link.href = "https://youtu.be/W3id8E34cRQ?si=0cnKUpE9pQYcqu3Y"; // Directly change the href attribute
+	}
+}
+
+function bellPepper() {
 	const fav = document.createElement("link");
 	fav.rel = "icon";
 	fav.href = chrome.runtime.getURL("assets/dougLight.png");
 	document.head.appendChild(fav);
 
-	// Check for dark mode preference
+	// Dark Mode
 	if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 		fav.href = chrome.runtime.getURL("assets/dougDark.png");
 	}
@@ -43,6 +47,12 @@ async function modifyText() {
 	const searchTerm = searchInput.value.toLowerCase().replace(/[-. ]+/g, "");
 
 	if (searchInput?.value) {
+		const searchFilters = document.querySelector(".js-search-filters");
+		const smashText = document.createElement("a");
+		const smashCharacters = fetch(chrome.runtime.getURL("assets/smash.txt"))
+			.then((response) => response.text())
+			.then((text) => text.split("\n").filter((character) => character !== ""));
+		smashText.style.cssText = "float: right; margin-left: 10px";
 		const characters = await smashCharacters;
 		const matchedCharacters = characters.filter((character) =>
 			searchTerm.includes(character.toLowerCase().replace(/[-. ]+/g, "")),
@@ -62,16 +72,15 @@ async function modifyText() {
 			searchFilters.appendChild(smashText);
 			searchSmash();
 			document.title = message;
-			chrome.storage.sync.get(["soundEnabled"], (result) => {
-				if (matchedCharacters.includes("Ike")) {
-					ikeAudio.play();
-				}
-			});
+			if (matchedCharacters.includes("Ike")) {
+				const ikeAudio = new Audio(chrome.runtime.getURL("assets/ike.mp3"));
+				ikeAudio.play();
+			}
 		} else if (document.title.includes("at DuckDuckGo")) {
 			document.title = `${searchInput.value} at DougDougGo`;
 		}
 	}
 }
 
-bellPeper();
+bellPepper();
 modifyText();
