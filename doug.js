@@ -14,27 +14,42 @@
 const url = new URL(window.location.href);
 const iaParam = url.searchParams.get("ia");
 
-// FIX: This only works if the script is being run twice in the same page without refreshing
+// Check if the script is to be executed for the "chat" condition
 if (iaParam === "chat") {
-	const links = document.querySelectorAll(".yGEuosa_aZeFroGMfpgu");
+	const updateNodes = () => {
+		const darkness = document.querySelectorAll(".yGEuosa_aZeFroGMfpgu");
 
-	for (const link of links) {
-		link.href = "https://youtu.be/W3id8E34cRQ?si=0cnKUpE9pQYcqu3Y"; // Directly change the href attribute
-	}
+		for (const element of darkness) {
+			if (element.tagName === "P") {
+				element.textContent =
+					"Darkness has approached, please try again tomorrow.";
+			}
+		}
+	};
+
+	updateNodes();
+
+	let isUpdating = false;
+
+	// PERF: observe if it's already updating
+	// if it is dont bother
+	const observer = new MutationObserver((mutations) => {
+		if (isUpdating) return;
+		isUpdating = true;
+
+		// Use a timeout to allow the code to finish processing mutations
+		setTimeout(() => {
+			for (const mutation of mutations) {
+				if (mutation.addedNodes.length || mutation.removedNodes.length) {
+					updateNodes();
+				}
+			}
+			isUpdating = false;
+		}, 100);
+	});
+
+	observer.observe(document.body, { childList: true, subtree: true });
 }
-
-function bellPepper() {
-	const fav = document.createElement("link");
-	fav.rel = "icon";
-	fav.href = chrome.runtime.getURL("assets/dougLight.png");
-	document.head.appendChild(fav);
-
-	// Dark Mode
-	if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-		fav.href = chrome.runtime.getURL("assets/dougDark.png");
-	}
-}
-
 function searchSmash() {
 	const fav = document.createElement("link");
 	fav.rel = "icon";
