@@ -50,6 +50,19 @@ if (iaParam === "chat") {
 
 	observer.observe(document.body, { childList: true, subtree: true });
 }
+
+function bellPepper() {
+	const fav = document.createElement("link");
+	fav.rel = "icon";
+	fav.href = chrome.runtime.getURL("assets/dougLight.png");
+	document.head.appendChild(fav);
+
+	// Dark Mode
+	if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+		fav.href = chrome.runtime.getURL("assets/dougDark.png");
+	}
+}
+
 function searchSmash() {
 	const fav = document.createElement("link");
 	fav.rel = "icon";
