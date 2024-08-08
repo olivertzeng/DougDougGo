@@ -32,7 +32,7 @@ if (iaParam === "chat") {
 	let isUpdating = false;
 
 	// PERF: observe if it's already updating
-	// if it is dont bother
+	// if it is don't bother
 	const observer = new MutationObserver((mutations) => {
 		if (isUpdating) return;
 		isUpdating = true;
