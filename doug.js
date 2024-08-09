@@ -14,43 +14,6 @@
 const url = new URL(window.location.href);
 const iaParam = url.searchParams.get("ia");
 
-// Check if the script is to be executed for the "chat" condition
-if (iaParam === "chat") {
-	const updateNodes = () => {
-		const darkness = document.querySelectorAll(".yGEuosa_aZeFroGMfpgu");
-
-		for (const element of darkness) {
-			if (element.tagName === "P") {
-				element.textContent =
-					"Darkness has approached, please try again tomorrow.";
-			}
-		}
-	};
-
-	updateNodes();
-
-	let isUpdating = false;
-
-	// PERF: observe if it's already updating
-	// if it is don't bother
-	const observer = new MutationObserver((mutations) => {
-		if (isUpdating) return;
-		isUpdating = true;
-
-		// Use a timeout to allow the code to finish processing mutations
-		setTimeout(() => {
-			for (const mutation of mutations) {
-				if (mutation.addedNodes.length || mutation.removedNodes.length) {
-					updateNodes();
-				}
-			}
-			isUpdating = false;
-		}, 100);
-	});
-
-	observer.observe(document.body, { childList: true, subtree: true });
-}
-
 function bellPepper() {
 	const fav = document.createElement("link");
 	fav.rel = "icon";
@@ -75,7 +38,6 @@ async function modifyText() {
 	const searchTerm = searchInput.value.toLowerCase().replace(/[-. ]+/g, "");
 
 	if (searchInput?.value) {
-		const searchFilters = document.querySelector(".js-search-filters");
 		const smashText = document.createElement("a");
 		const smashCharacters = fetch(chrome.runtime.getURL("assets/smash.txt"))
 			.then((response) => response.text())
@@ -97,7 +59,8 @@ async function modifyText() {
 				smashText.textContent = message;
 			}
 			smashText.href = "https://www.youtube.com/watch?v=JsYWZSTbEPU";
-			searchFilters.appendChild(smashText);
+			const textPosition = document.querySelector(".RHsWhMlxc4ETEMDS9ltw");
+			textPosition.appendChild(smashText);
 			searchSmash();
 			document.title = message;
 			if (matchedCharacters.includes("Ike")) {
