@@ -4,7 +4,7 @@
 // @namespace   https://duckduckgo.com
 // @match       *://*duckduckgo.com/*
 // @license     GPLv3
-// @version     1.2
+// @version     1.2.1
 // @author      Oliver Tzeng
 // @description DougDougGo is now your new search engine
 // @description:zh-TW  DougDougGo 將是你獨一無二的搜尋引擎

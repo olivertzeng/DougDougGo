@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "DougDougGo",
-	"version": "1.2",
+	"version": "1.2.1",
 	"description": "DougDougGo is now your new search engine",
 	"icons": {
 		"48": "assets/dougDark.png"
