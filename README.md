@@ -1,7 +1,7 @@
 # **DougDougGo**
 ![DougDougGo](assets/bigDark.png)
 
-## **DougDougGo is an extension that adds the famous streamer DougDoug's elements into duckduckgo.com**
+## **DougDougGo is an extension featuring streamer DougDoug's elements into DDG**
 ## Changes Include:
  - changes all DuckDuckGo logos into DougDougGo
  - changes favicon
@@ -9,7 +9,7 @@
 
  > [!IMPORTANT]
  > # DougDougGo ublocklist
- > - To make the text show you'll have to install this blocklist. You can also checkout my [custom script](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/olivertzeng/dotfiles/master/ublocklist.txt&title=Oliver Tzeng's Custom Blocklist). But [here](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/olivertzeng/DougDougGo/main/dougdouggo.txt&title=DougDougGo Blocklist) is the most basic script to hide duckduckgo's annoyances for basic addon functionality.
+ > - To make the text show properly installation of these blocklist is required. You can also checkout my [custom blocklist](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/olivertzeng/dotfiles/master/ublocklist.txt&title=Oliver Tzeng's Custom Blocklist). But [here](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/olivertzeng/DougDougGo/main/dougdouggo.txt&title=DougDougGo Blocklist) is the most basic script to hide duckduckgo's annoyances for basic addon functionality.
  > Instructions: Install [uBlock
  > Origin](https://addons.mozilla.org/zh-TW/firefox/addon/ublock-origin/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
  > from FireFox addon store and click the link above. It'll then direct you to my blocklist. Click
@@ -26,7 +26,7 @@
 
 ## Thanks to
  - DougDoug for inspirement
- - MagicJin being a tester, a supporter, an artist who made the extension icon, and a nice guy who makes DougDougify(and MrBeastify as
+ - MagicJinn being a tester, a supporter, an artist who made the extension icon, and a nice guy who makes DougDougify(and MrBeastify as
    well!)
 
 ## Disclamer
