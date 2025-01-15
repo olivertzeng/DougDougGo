@@ -1,1 +1,1 @@
-zip -r -FS ../extension.zip * --exclude '*.git*'
+zip -r -FS extension.zip * --exclude '*.git*'
