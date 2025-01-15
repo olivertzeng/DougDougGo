@@ -1,96 +1,155 @@
 :root {
-    --small-logo: url('assets/smallLight.png');
-    --big-logo: url('assets/bigLight.png');
-    --header-logo: url('assets/dougLight.png');
+	--small-logo: url("assets/smallLight.png");
+	--big-logo: url("assets/bigLight.png");
+	--header-logo: url("assets/dougLight.png");
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --small-logo: url('assets/smallDark.png');
-        --big-logo: url('assets/bigDark.png');
-        --header-logo: url('assets/dougDark.png');
-    }
+	:root {
+		--small-logo: url("assets/smallDark.png");
+		--big-logo: url("assets/bigDark.png");
+		--header-logo: url("assets/dougDark.png");
+	}
 }
 
 img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(2) {
-    content: var(--small-logo) !important;
+	content: var(--small-logo) !important;
 }
 
 img.minimal-homepage_minimalHeroLogo__QSVlf:nth-child(5) {
-    content: var(--big-logo) !important;
+	content: var(--big-logo) !important;
 }
 
 .header__logo {
-    background-image: var(--header-logo) !important;
+	background-image: var(--header-logo) !important;
 }
 
 .SeMO2DqOjxoKrCHhR0yN {
-    font-size: 0;
-    /* hide the original text */
+	font-size: 0;
+	/* hide the original text */
 }
 
 .SeMO2DqOjxoKrCHhR0yN::before {
-    content: "Babagaboosh";
-    font-size: 20px;
-    display: inline;
+	content: "Babagaboosh";
+	font-size: 20px;
+	display: inline;
 }
 
-
 .gADc1vgzmPc4cvxu7yBr {
-    text-indent: -9999px;
+	text-indent: -9999px;
 }
 
 .gADc1vgzmPc4cvxu7yBr::before {
-    content: "Rigged";
-    text-indent: 0;
-    display: inline;
+	content: "Rigged";
+	text-indent: 0;
+	display: inline;
 }
 
 .sideMenu_hasBadge__sgC0X .sideMenu_sectionLink__Ig1Qo a {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 .sideMenu_hasBadge__sgC0X .sideMenu_sectionLink__Ig1Qo a::before {
-    content: "Babagaboosh";
-    visibility: visible;
-    display: inline;
+	content: "Babagaboosh";
+	visibility: visible;
+	display: inline;
 }
 
 .sideMenu_hasBadge__sgC0X .sideMenu_sectionLinkBadge__Ds14_ {
-    text-indent: -9999px;
+	text-indent: -9999px;
 }
 
 .sideMenu_hasBadge__sgC0X .sideMenu_sectionLinkBadge__Ds14_::before {
-    content: "Rigged";
-    text-indent: 0;
-    display: inline;
+	content: "Rigged";
+	text-indent: 0;
+	display: inline;
 }
 
 .pCQH0ecmPjJ5Flj1M2wQ.wZ4JdaHxSAhGy1HoNVja.VqLJ9t1dMELeSYmj7MgG {
-    font-size: 0;
+	font-size: 0;
 }
 
 .pCQH0ecmPjJ5Flj1M2wQ.wZ4JdaHxSAhGy1HoNVja.VqLJ9t1dMELeSYmj7MgG::before {
-    content: "Babagaboosh";
-    font-size: 32px;
-    display: inline;
+	content: "Babagaboosh";
+	font-size: 32px;
+	display: inline;
+}
+
+.VVwKmb7llplcxyVXzHz9.nWaOkxAPEk2W_43cmAki.eEHLqtMiqMsCAZCkwFaE.ffON2NH02oMAcqyoh2UU.ekCwkGuake0VTpY_jFSg {
+	font-size: 0;
+}
+
+.VVwKmb7llplcxyVXzHz9.nWaOkxAPEk2W_43cmAki.eEHLqtMiqMsCAZCkwFaE.ffON2NH02oMAcqyoh2UU.ekCwkGuake0VTpY_jFSg::after {
+	content: "Spawn New Sam";
+	font-size: 17.6px;
+	display: inline;
 }
 
 .eHmVgpFRodaWaS9Ka39P svg {
-    display: none;
+	display: none;
 }
 
 .eHmVgpFRodaWaS9Ka39P {
-    background-image: var(--header-logo);
-    background-size: 96px 96px;
+	background-image: var(--header-logo);
+	background-size: 96px 96px;
 }
 
-.wZ4JdaHxSAhGy1HoNVja xrWcR15SIZQFwwZBfYi3 {
-    visibility: hidden;
+.wZ4JdaHxSAhGy1HoNVja.xrWcR15SIZQFwwZBfYi3 {
+	font-size: 0;
 }
 
-.wZ4JdaHxSAhGy1HoNVja xrWcR15SIZQFwwZBfYi3::before {
-    content: "This shield protect Sam and his siblings being killed by evil DougDoug. Babaga-BOOSH!";
-    text-indent: 0;
-    visibility: visible;
+.wZ4JdaHxSAhGy1HoNVja.xrWcR15SIZQFwwZBfYi3::before {
+	content: "Pajama Sam Simulator";
+	font-size: 21px;
+	display: inline;
 }
+
+.sgyUFzmA1VDsy59mWCx_.wZ4JdaHxSAhGy1HoNVja.d26Geqs1C__RaCO7MUs2 {
+	font-size: 0;
+}
+
+.sgyUFzmA1VDsy59mWCx_.wZ4JdaHxSAhGy1HoNVja.d26Geqs1C__RaCO7MUs2::before {
+	content: "Sam's Siblings";
+	font-size: 20.3667px;
+	display: inline;
+}
+
+.H3lLZ1vyzddvn3DbcXtx.wZ4JdaHxSAhGy1HoNVja.cPy9QU4brI7VQXFNPEvF {
+	font-size: 0;
+}
+
+.H3lLZ1vyzddvn3DbcXtx.wZ4JdaHxSAhGy1HoNVja.cPy9QU4brI7VQXFNPEvF::after {
+	content: "All Sam's siblings will be stored locally";
+	font-size: 17.5px;
+	display: inline;
+}
+
+.wZ4JdaHxSAhGy1HoNVja.AlPVsxUsFt3bnuOvg6hI.eKLpdg0GHJZw2hhyErM0 {
+	font-size: 0;
+}
+
+/* .parent-class .wZ4JdaHxSAhGy1HoNVja.cPy9QU4brI7VQXFNPEvF { */
+/* 	font-size: 0; */
+/* } */
+/**/
+/* .parent-class .wZ4JdaHxSAhGy1HoNVja.cPy9QU4brI7VQXFNPEvF::after { */
+/* 	content: "If you got a real mess with your wife and want to claim custody like the pros, then you gotta see this. Hi! DougDoug here for the new Pajama Sam, the funniest AI I've ever used. It has the strength, and the muscle, to pick up and hold your shattered heart. Watch as its powerful Twitch Chat action, commits serveral tax frauds out of the government and got caught by the IRS. That's cash, in the trash. The secrets in the AI technology, including GPT-4o mini, Claude 3,Llama 3.1, Mixtral, making Pajama Sam over 14.99x funnier than Bjorn. Forget Twitch AIs that can only spell the word Kyoto, Pajama Sam is the ultimate solution to the humanity."; */
+/* 	font-size: 20px; */
+/* 	display: inline; */
+/* } */
+
+.j72e4m7zhGDBY7aLZXGL {
+	font-size: 0;
+}
+
+.j72e4m7zhGDBY7aLZXGL::after {
+	content: "Everything about Pajama Sam";
+	font-size: 25px;
+	display: inline;
+}
+
+/* .O9Ipab51rBntYb0pwOQn.LTDeqvDYZrCQqHCXvDjS.undefined.CEsDlaNsgLKqnJ6oWF7S { */
+/* 	max-width: 1000px; */
+/* 	max-height: 1000px; */
+/* 	margin: 0 auto; */
+/* } */
